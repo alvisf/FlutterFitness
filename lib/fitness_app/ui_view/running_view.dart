@@ -76,7 +76,7 @@ class _RunningViewState extends State<RunningView> {
                         padding: const EdgeInsets.only(top: 16, bottom: 16),
                         child: Container(
                           decoration: BoxDecoration(
-                            color: FintnessAppTheme.white,
+                            color: FitnessAppTheme.white,
                             borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(8.0),
                                 bottomLeft: Radius.circular(8.0),
@@ -84,7 +84,7 @@ class _RunningViewState extends State<RunningView> {
                                 topRight: Radius.circular(8.0)),
                             boxShadow: <BoxShadow>[
                               BoxShadow(
-                                  color: FintnessAppTheme.grey.withOpacity(0.4),
+                                  color: FitnessAppTheme.grey.withOpacity(0.4),
                                   offset: Offset(1.1, 1.1),
                                   blurRadius: 10.0),
                             ],

@@ -1,13 +1,13 @@
 import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:myfitnessapp/fitness_app/diet/diet_view.dart';
 import 'package:myfitnessapp/fitness_app/fitness_app_home_screen.dart';
 import 'package:myfitnessapp/fitness_app/fitness_worker/arrange.dart';
 import 'package:myfitnessapp/fitness_app/fitness_worker/workoutPlayer.dart';
-import 'fitness_app/package_view.dart';
-// import 'navigation_home_screen.dart';
 
+import 'fitness_app/package_view.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SystemChrome.setPreferredOrientations(<DeviceOrientation>[

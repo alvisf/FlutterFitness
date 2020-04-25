@@ -1,3 +1,4 @@
+import 'package:myfitnessapp/Config/SizeConfig.dart';
 import 'package:myfitnessapp/fitness_app/models/tabIcon_data.dart';
 import 'package:myfitnessapp/fitness_app/traning/package_screen.dart';
 import 'package:flutter/material.dart';
@@ -9,7 +10,7 @@ class PackageView extends StatefulWidget {
 }
 
 Widget tabBody = Container(
-  color: FintnessAppTheme.background,
+  color: FitnessAppTheme.background,
 );
 AnimationController animationController;
 
@@ -40,8 +41,9 @@ class _PackageViewState extends State<PackageView>
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     return Container(
-      color: FintnessAppTheme.background,
+      color: FitnessAppTheme.background,
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: FutureBuilder<bool>(
@@ -87,13 +89,13 @@ Widget bottomBar() {
                   child: Text(
                     "START",
                     style: new TextStyle(
-                      fontSize: 50.0,
+                      fontSize: SizeConfig.screenHeight / 30,
                       fontFamily: "Roboto",
                     ),
                   ),
                   textColor: Colors.white,
                   padding: EdgeInsets.all(10),
-                  color: FintnessAppTheme.nearlyDarkBlue,
+                  color: FitnessAppTheme.nearlyDarkBlue,
                   shape: RoundedRectangleBorder(
                     borderRadius: new BorderRadius.circular(8.0),
                   ),

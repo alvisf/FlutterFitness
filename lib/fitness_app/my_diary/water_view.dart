@@ -1,3 +1,5 @@
+import 'package:auto_size_text/auto_size_text.dart';
+import 'package:myfitnessapp/Config/SizeConfig.dart';
 import 'package:myfitnessapp/fitness_app/ui_view/wave_view.dart';
 import 'package:myfitnessapp/fitness_app/fintness_app_theme.dart';
 import 'package:myfitnessapp/main.dart';
@@ -23,6 +25,7 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     return AnimatedBuilder(
       animation: widget.mainScreenAnimationController,
       builder: (BuildContext context, Widget child) {
@@ -36,7 +39,7 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                   left: 24, right: 24, top: 16, bottom: 18),
               child: Container(
                 decoration: BoxDecoration(
-                  color: FintnessAppTheme.white,
+                  color: FitnessAppTheme.white,
                   borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(8.0),
                       bottomLeft: Radius.circular(8.0),
@@ -44,7 +47,7 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                       topRight: Radius.circular(68.0)),
                   boxShadow: <BoxShadow>[
                     BoxShadow(
-                        color: FintnessAppTheme.grey.withOpacity(0.2),
+                        color: FitnessAppTheme.grey.withOpacity(0.2),
                         offset: const Offset(1.1, 1.1),
                         blurRadius: 10.0),
                   ],
@@ -63,37 +66,38 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                               children: <Widget>[
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.end,
                                   children: <Widget>[
                                     Padding(
                                       padding: const EdgeInsets.only(
                                           left: 4, bottom: 3),
-                                      child: Text(
-                                        'Title of Pack',
-                                        textAlign: TextAlign.center,
+                                      child: AutoSizeText(
+                                        "Title of Pack",
                                         style: TextStyle(
-                                          fontFamily: FintnessAppTheme.fontName,
-                                          fontWeight: FontWeight.w600,
-                                          fontSize: 32,
-                                          color:
-                                              FintnessAppTheme.nearlyDarkBlue,
-                                        ),
+                                            fontFamily:
+                                                FitnessAppTheme.fontName,
+                                            fontWeight: FontWeight.w600,
+                                            color:
+                                                FitnessAppTheme.nearlyDarkBlue,
+                                            fontSize:
+                                                SizeConfig.screenHeight / 30),
+                                        maxLines: 2,
                                       ),
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.only(
                                           left: 8, bottom: 8),
-                                      child: Text(
+                                      child: AutoSizeText(
                                         'End text',
                                         textAlign: TextAlign.right,
                                         style: TextStyle(
-                                          fontFamily: FintnessAppTheme.fontName,
-                                          fontWeight: FontWeight.w500,
-                                          fontSize: 18,
-                                          letterSpacing: -0.2,
-                                          color:
-                                              FintnessAppTheme.nearlyDarkBlue,
-                                        ),
+                                            fontFamily:
+                                                FitnessAppTheme.fontName,
+                                            fontWeight: FontWeight.w500,
+                                            letterSpacing: -0.2,
+                                            color:
+                                                FitnessAppTheme.nearlyDarkBlue,
+                                            fontSize:
+                                                SizeConfig.blockSizeHorizontal),
                                       ),
                                     ),
                                   ],
@@ -105,11 +109,11 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                                     'Sub Title',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
-                                      fontFamily: FintnessAppTheme.fontName,
+                                      fontFamily: FitnessAppTheme.fontName,
                                       fontWeight: FontWeight.w500,
                                       fontSize: 14,
                                       letterSpacing: 0.0,
-                                      color: FintnessAppTheme.darkText,
+                                      color: FitnessAppTheme.darkText,
                                     ),
                                   ),
                                 ),
@@ -121,7 +125,7 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                               child: Container(
                                 height: 2,
                                 decoration: BoxDecoration(
-                                  color: FintnessAppTheme.background,
+                                  color: FitnessAppTheme.background,
                                   borderRadius: const BorderRadius.all(
                                       Radius.circular(4.0)),
                                 ),
@@ -146,11 +150,11 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                             fontFamily:
-                                                FintnessAppTheme.fontName,
+                                                FitnessAppTheme.fontName,
                                             fontWeight: FontWeight.w500,
                                             fontSize: 18,
                                             letterSpacing: 0.0,
-                                            color: FintnessAppTheme.grey
+                                            color: FitnessAppTheme.grey
                                                 .withOpacity(1),
                                           ),
                                         ),
@@ -209,7 +213,7 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                                 topRight: Radius.circular(80.0)),
                             boxShadow: <BoxShadow>[
                               BoxShadow(
-                                  color: FintnessAppTheme.grey.withOpacity(0.4),
+                                  color: FitnessAppTheme.grey.withOpacity(0.4),
                                   offset: const Offset(2, 2),
                                   blurRadius: 4),
                             ],

@@ -26,7 +26,7 @@ class MediterranesnDietView extends StatelessWidget {
                   left: 24, right: 24, top: 16, bottom: 18),
               child: Container(
                 decoration: BoxDecoration(
-                  color: FintnessAppTheme.white,
+                  color: FitnessAppTheme.white,
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(8.0),
                       bottomLeft: Radius.circular(8.0),
@@ -34,7 +34,7 @@ class MediterranesnDietView extends StatelessWidget {
                       topRight: Radius.circular(8.0)),
                   boxShadow: <BoxShadow>[
                     BoxShadow(
-                        color: FintnessAppTheme.grey.withOpacity(0.2),
+                        color: FitnessAppTheme.grey.withOpacity(0.2),
                         offset: Offset(1.1, 1.1),
                         blurRadius: 10.0),
                   ],
@@ -80,11 +80,11 @@ class MediterranesnDietView extends StatelessWidget {
                                                 textAlign: TextAlign.center,
                                                 style: TextStyle(
                                                   fontFamily:
-                                                      FintnessAppTheme.fontName,
+                                                      FitnessAppTheme.fontName,
                                                   fontWeight: FontWeight.w500,
                                                   fontSize: 16,
                                                   letterSpacing: -0.1,
-                                                  color: FintnessAppTheme.grey
+                                                  color: FitnessAppTheme.grey
                                                       .withOpacity(0.5),
                                                 ),
                                               ),
@@ -110,12 +110,12 @@ class MediterranesnDietView extends StatelessWidget {
                                                     textAlign: TextAlign.center,
                                                     style: TextStyle(
                                                       fontFamily:
-                                                          FintnessAppTheme
+                                                          FitnessAppTheme
                                                               .fontName,
                                                       fontWeight:
                                                           FontWeight.w600,
                                                       fontSize: 16,
-                                                      color: FintnessAppTheme
+                                                      color: FitnessAppTheme
                                                           .darkerText,
                                                     ),
                                                   ),
@@ -129,13 +129,13 @@ class MediterranesnDietView extends StatelessWidget {
                                                     textAlign: TextAlign.center,
                                                     style: TextStyle(
                                                       fontFamily:
-                                                          FintnessAppTheme
+                                                          FitnessAppTheme
                                                               .fontName,
                                                       fontWeight:
                                                           FontWeight.w600,
                                                       fontSize: 12,
                                                       letterSpacing: -0.2,
-                                                      color: FintnessAppTheme
+                                                      color: FitnessAppTheme
                                                           .grey
                                                           .withOpacity(0.5),
                                                     ),
@@ -181,11 +181,11 @@ class MediterranesnDietView extends StatelessWidget {
                                                 textAlign: TextAlign.center,
                                                 style: TextStyle(
                                                   fontFamily:
-                                                      FintnessAppTheme.fontName,
+                                                      FitnessAppTheme.fontName,
                                                   fontWeight: FontWeight.w500,
                                                   fontSize: 16,
                                                   letterSpacing: -0.1,
-                                                  color: FintnessAppTheme.grey
+                                                  color: FitnessAppTheme.grey
                                                       .withOpacity(0.5),
                                                 ),
                                               ),
@@ -211,12 +211,12 @@ class MediterranesnDietView extends StatelessWidget {
                                                     textAlign: TextAlign.center,
                                                     style: TextStyle(
                                                       fontFamily:
-                                                          FintnessAppTheme
+                                                          FitnessAppTheme
                                                               .fontName,
                                                       fontWeight:
                                                           FontWeight.w600,
                                                       fontSize: 16,
-                                                      color: FintnessAppTheme
+                                                      color: FitnessAppTheme
                                                           .darkerText,
                                                     ),
                                                   ),
@@ -230,13 +230,13 @@ class MediterranesnDietView extends StatelessWidget {
                                                     textAlign: TextAlign.center,
                                                     style: TextStyle(
                                                       fontFamily:
-                                                          FintnessAppTheme
+                                                          FitnessAppTheme
                                                               .fontName,
                                                       fontWeight:
                                                           FontWeight.w600,
                                                       fontSize: 12,
                                                       letterSpacing: -0.2,
-                                                      color: FintnessAppTheme
+                                                      color: FitnessAppTheme
                                                           .grey
                                                           .withOpacity(0.5),
                                                     ),
@@ -265,13 +265,13 @@ class MediterranesnDietView extends StatelessWidget {
                                       width: 100,
                                       height: 100,
                                       decoration: BoxDecoration(
-                                        color: FintnessAppTheme.white,
+                                        color: FitnessAppTheme.white,
                                         borderRadius: BorderRadius.all(
                                           Radius.circular(100.0),
                                         ),
                                         border: new Border.all(
                                             width: 4,
-                                            color: FintnessAppTheme
+                                            color: FitnessAppTheme
                                                 .nearlyDarkBlue
                                                 .withOpacity(0.2)),
                                       ),
@@ -286,11 +286,11 @@ class MediterranesnDietView extends StatelessWidget {
                                             textAlign: TextAlign.center,
                                             style: TextStyle(
                                               fontFamily:
-                                                  FintnessAppTheme.fontName,
+                                                  FitnessAppTheme.fontName,
                                               fontWeight: FontWeight.normal,
                                               fontSize: 24,
                                               letterSpacing: 0.0,
-                                              color: FintnessAppTheme
+                                              color: FitnessAppTheme
                                                   .nearlyDarkBlue,
                                             ),
                                           ),
@@ -299,11 +299,11 @@ class MediterranesnDietView extends StatelessWidget {
                                             textAlign: TextAlign.center,
                                             style: TextStyle(
                                               fontFamily:
-                                                  FintnessAppTheme.fontName,
+                                                  FitnessAppTheme.fontName,
                                               fontWeight: FontWeight.bold,
                                               fontSize: 12,
                                               letterSpacing: 0.0,
-                                              color: FintnessAppTheme.grey
+                                              color: FitnessAppTheme.grey
                                                   .withOpacity(0.5),
                                             ),
                                           ),
@@ -316,9 +316,9 @@ class MediterranesnDietView extends StatelessWidget {
                                     child: CustomPaint(
                                       painter: CurvePainter(
                                           colors: [
-                                            FintnessAppTheme.nearlyDarkBlue,
-                                            FintnessAppTheme.gradientColour,
-                                            FintnessAppTheme.gradientColour
+                                            FitnessAppTheme.nearlyDarkBlue,
+                                            FitnessAppTheme.gradientColour,
+                                            FitnessAppTheme.gradientColour
                                           ],
                                           angle: 140 +
                                               (360 - 140) *

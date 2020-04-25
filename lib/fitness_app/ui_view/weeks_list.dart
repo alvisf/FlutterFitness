@@ -38,7 +38,7 @@ class _WeeksListState extends State<WeeksList> with TickerProviderStateMixin {
               child: Container(
                   height: 470.0,
                   decoration: BoxDecoration(
-                    color: FintnessAppTheme.white,
+                    color: FitnessAppTheme.white,
                     borderRadius: const BorderRadius.only(
                         topLeft: Radius.circular(8.0),
                         bottomLeft: Radius.circular(8.0),
@@ -46,7 +46,7 @@ class _WeeksListState extends State<WeeksList> with TickerProviderStateMixin {
                         topRight: Radius.circular(8.0)),
                     boxShadow: <BoxShadow>[
                       BoxShadow(
-                          color: FintnessAppTheme.grey.withOpacity(0.2),
+                          color: FitnessAppTheme.grey.withOpacity(0.2),
                           offset: const Offset(1.1, 1.1),
                           blurRadius: 10.0),
                     ],
@@ -153,31 +153,31 @@ class KreaView extends StatelessWidget {
                           Text(
                             "Title",
                             style: TextStyle(
-                              fontFamily: FintnessAppTheme.fontName,
+                              fontFamily: FitnessAppTheme.fontName,
                               fontWeight: FontWeight.normal,
                               fontSize: 18,
                               letterSpacing: -0.2,
-                              color: FintnessAppTheme.darkerText,
+                              color: FitnessAppTheme.darkerText,
                             ),
                           ),
                           Text(
                             "Day 00",
                             style: TextStyle(
-                              fontFamily: FintnessAppTheme.fontName,
+                              fontFamily: FitnessAppTheme.fontName,
                               fontWeight: FontWeight.normal,
                               fontSize: 13,
                               letterSpacing: -0.2,
-                              color: FintnessAppTheme.darkerText,
+                              color: FitnessAppTheme.darkerText,
                             ),
                           ),
                           Text(
                             "00 minutes",
                             style: TextStyle(
-                              fontFamily: FintnessAppTheme.fontName,
+                              fontFamily: FitnessAppTheme.fontName,
                               fontWeight: FontWeight.normal,
                               fontSize: 13,
                               letterSpacing: -0.2,
-                              color: FintnessAppTheme.darkerText,
+                              color: FitnessAppTheme.darkerText,
                             ),
                           ),
                         ],

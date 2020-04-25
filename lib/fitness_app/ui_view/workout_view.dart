@@ -44,8 +44,8 @@ class _WorkoutViewState extends State<WorkoutView>
               child: Container(
                 decoration: BoxDecoration(
                   gradient: LinearGradient(colors: [
-                    FintnessAppTheme.nearlyDarkBlue,
-                    FintnessAppTheme.gradientColour,
+                    FitnessAppTheme.nearlyDarkBlue,
+                    FitnessAppTheme.gradientColour,
                   ], begin: Alignment.topLeft, end: Alignment.bottomRight),
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(8.0),
@@ -54,7 +54,7 @@ class _WorkoutViewState extends State<WorkoutView>
                       topRight: Radius.circular(8.0)),
                   boxShadow: <BoxShadow>[
                     BoxShadow(
-                        color: FintnessAppTheme.grey.withOpacity(0.6),
+                        color: FitnessAppTheme.grey.withOpacity(0.6),
                         offset: Offset(1.1, 1.1),
                         blurRadius: 10.0),
                   ],
@@ -76,11 +76,11 @@ class _WorkoutViewState extends State<WorkoutView>
                           "Plan Title",
                           textAlign: TextAlign.left,
                           style: TextStyle(
-                            fontFamily: FintnessAppTheme.fontName,
+                            fontFamily: FitnessAppTheme.fontName,
                             fontWeight: FontWeight.normal,
                             fontSize: 14,
                             letterSpacing: 0.0,
-                            color: FintnessAppTheme.white,
+                            color: FitnessAppTheme.white,
                           ),
                         ),
                         Padding(
@@ -89,11 +89,11 @@ class _WorkoutViewState extends State<WorkoutView>
                             todaysWorkoutTitle,
                             textAlign: TextAlign.left,
                             style: TextStyle(
-                              fontFamily: FintnessAppTheme.fontName,
+                              fontFamily: FitnessAppTheme.fontName,
                               fontWeight: FontWeight.normal,
                               fontSize: 20,
                               letterSpacing: 0.0,
-                              color: FintnessAppTheme.white,
+                              color: FitnessAppTheme.white,
                             ),
                           ),
                         ),
@@ -110,7 +110,7 @@ class _WorkoutViewState extends State<WorkoutView>
                                 padding: const EdgeInsets.only(left: 4),
                                 child: Icon(
                                   Icons.timer,
-                                  color: FintnessAppTheme.white,
+                                  color: FitnessAppTheme.white,
                                   size: 16,
                                 ),
                               ),
@@ -120,11 +120,11 @@ class _WorkoutViewState extends State<WorkoutView>
                                   '$todaysWorkoutTime min',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
-                                    fontFamily: FintnessAppTheme.fontName,
+                                    fontFamily: FitnessAppTheme.fontName,
                                     fontWeight: FontWeight.w500,
                                     fontSize: 14,
                                     letterSpacing: 0.0,
-                                    color: FintnessAppTheme.white,
+                                    color: FitnessAppTheme.white,
                                   ),
                                 ),
                               ),
@@ -133,11 +133,11 @@ class _WorkoutViewState extends State<WorkoutView>
                               ),
                               Container(
                                 decoration: BoxDecoration(
-                                  color: FintnessAppTheme.nearlyWhite,
+                                  color: FitnessAppTheme.nearlyWhite,
                                   shape: BoxShape.circle,
                                   boxShadow: <BoxShadow>[
                                     BoxShadow(
-                                        color: FintnessAppTheme.nearlyBlack
+                                        color: FitnessAppTheme.nearlyBlack
                                             .withOpacity(0.4),
                                         offset: Offset(8.0, 8.0),
                                         blurRadius: 8.0),
@@ -147,7 +147,7 @@ class _WorkoutViewState extends State<WorkoutView>
                                   padding: const EdgeInsets.all(0.0),
                                   child: Icon(
                                     Icons.arrow_right,
-                                    color: FintnessAppTheme.gradientColour,
+                                    color: FitnessAppTheme.gradientColour,
                                     size: 44,
                                   ),
                                 ),

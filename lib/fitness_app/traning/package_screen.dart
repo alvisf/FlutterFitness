@@ -1,8 +1,6 @@
-import 'package:myfitnessapp/fitness_app/my_diary/water_view.dart';
-// import 'package:myfitnessapp/fitness_app/ui_view/pack_list_view.dart';
-// import 'package:myfitnessapp/fitness_app/ui_view/running_view.dart';
-// import 'package:myfitnessapp/fitness_app/ui_view/title_view.dart';
 import 'package:flutter/material.dart';
+import 'package:myfitnessapp/Config/SizeConfig.dart';
+import 'package:myfitnessapp/fitness_app/my_diary/water_view.dart';
 import 'package:myfitnessapp/fitness_app/ui_view/weeks_list.dart';
 
 import '../fintness_app_theme.dart';
@@ -11,6 +9,7 @@ class PackageScreen extends StatefulWidget {
   const PackageScreen({Key key, this.animationController}) : super(key: key);
 
   final AnimationController animationController;
+
   @override
   _PackageScreenState createState() => _PackageScreenState();
 }
@@ -88,8 +87,9 @@ class _PackageScreenState extends State<PackageScreen>
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     return Container(
-      color: FintnessAppTheme.background,
+      color: FitnessAppTheme.background,
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Stack(
@@ -145,14 +145,14 @@ class _PackageScreenState extends State<PackageScreen>
                     0.0, 30 * (1.0 - topBarAnimation.value), 0.0),
                 child: Container(
                   decoration: BoxDecoration(
-                    color: FintnessAppTheme.white.withOpacity(topBarOpacity),
+                    color: FitnessAppTheme.white.withOpacity(topBarOpacity),
                     borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(32.0),
                       bottomRight: Radius.circular(32.0),
                     ),
                     boxShadow: <BoxShadow>[
                       BoxShadow(
-                          color: FintnessAppTheme.grey
+                          color: FitnessAppTheme.grey
                               .withOpacity(0.4 * topBarOpacity),
                           offset: const Offset(1.1, 1.1),
                           blurRadius: 10.0),
@@ -180,7 +180,7 @@ class _PackageScreenState extends State<PackageScreen>
                                 },
                                 child: Icon(
                                   Icons.arrow_back,
-                                  color: FintnessAppTheme.grey,
+                                  color: FitnessAppTheme.grey,
                                   size: 28,
                                 ),
                               ),
@@ -194,11 +194,11 @@ class _PackageScreenState extends State<PackageScreen>
                                     'Package',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
-                                      fontFamily: FintnessAppTheme.fontName,
+                                      fontFamily: FitnessAppTheme.fontName,
                                       fontWeight: FontWeight.w700,
-                                      fontSize: 22 + 6 - 6 * topBarOpacity,
+                                      fontSize: SizeConfig.screenHeight / 25,
                                       letterSpacing: 1.2,
-                                      color: FintnessAppTheme.darkerText,
+                                      color: FitnessAppTheme.darkerText,
                                     ),
                                   ),
                                 ),

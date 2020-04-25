@@ -16,6 +16,8 @@ dependencies:
   intl: ^0.16.0
   fl_chart: ^0.6.3
   settings_ui: ^0.2.0
+  auto_size_text: ^2.1.0
+
 
 dev_dependencies:
   flutter_test:
