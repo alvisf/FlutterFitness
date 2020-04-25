@@ -1,9 +1,9 @@
 import 'dart:math' as math;
+
+import 'package:flutter/material.dart';
 import 'package:myfitnessapp/fitness_app/fintness_app_theme.dart';
 import 'package:myfitnessapp/fitness_app/models/tabIcon_data.dart';
-// import 'package:myfitnessapp/main.dart';
-import 'package:flutter/material.dart';
-// import '../../main.dart';
+
 import '../models/tabIcon_data.dart';
 
 class BottomBarView extends StatefulWidget {
@@ -43,7 +43,7 @@ class _BottomBarViewState extends State<BottomBarView>
             return Transform(
               transform: Matrix4.translationValues(0.0, 0.0, 0.0),
               child: PhysicalShape(
-                color: FintnessAppTheme.white,
+                color: FitnessAppTheme.white,
                 elevation: 16.0,
                 clipper: TabClipper(
                     radius: Tween<double>(begin: 0.0, end: 1.0)
@@ -211,7 +211,7 @@ class _TabIconsState extends State<TabIcons> with TickerProviderStateMixin {
                       width: 8,
                       height: 8,
                       decoration: BoxDecoration(
-                        color: FintnessAppTheme.nearlyDarkBlue,
+                        color: FitnessAppTheme.nearlyDarkBlue,
                         shape: BoxShape.circle,
                       ),
                     ),
@@ -232,7 +232,7 @@ class _TabIconsState extends State<TabIcons> with TickerProviderStateMixin {
                       width: 4,
                       height: 4,
                       decoration: BoxDecoration(
-                        color: FintnessAppTheme.nearlyDarkBlue,
+                        color: FitnessAppTheme.nearlyDarkBlue,
                         shape: BoxShape.circle,
                       ),
                     ),
@@ -253,7 +253,7 @@ class _TabIconsState extends State<TabIcons> with TickerProviderStateMixin {
                       width: 6,
                       height: 6,
                       decoration: BoxDecoration(
-                        color: FintnessAppTheme.nearlyDarkBlue,
+                        color: FitnessAppTheme.nearlyDarkBlue,
                         shape: BoxShape.circle,
                       ),
                     ),

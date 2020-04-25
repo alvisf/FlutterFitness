@@ -6,7 +6,7 @@ class ArrangePlaylist extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: FintnessAppTheme.background,
+      color: FitnessAppTheme.background,
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Column(
@@ -47,7 +47,7 @@ class ArrangePlaylist extends StatelessWidget {
                               },
                               child: Icon(
                                 Icons.arrow_back,
-                                color: FintnessAppTheme.nearlyBlack,
+                                color: FitnessAppTheme.nearlyBlack,
                                 size: 28,
                               ),
                             ),
@@ -62,11 +62,11 @@ class ArrangePlaylist extends StatelessWidget {
                                     'Package',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
-                                      fontFamily: FintnessAppTheme.fontName,
+                                      fontFamily: FitnessAppTheme.fontName,
                                       fontWeight: FontWeight.w700,
                                       fontSize: 22 + 6 - 6 * 1.0,
                                       letterSpacing: 1.2,
-                                      color: FintnessAppTheme.white,
+                                      color: FitnessAppTheme.white,
                                     ),
                                   ),
                                   decoration: new BoxDecoration(
@@ -109,7 +109,7 @@ class ArrangePlaylist extends StatelessWidget {
           ),
           height: 55,
           decoration: new BoxDecoration(
-            color: FintnessAppTheme.nearlyDarkBlue,
+            color: FitnessAppTheme.nearlyDarkBlue,
             borderRadius: new BorderRadius.only(
               topLeft: const Radius.circular(10.0),
               topRight: const Radius.circular(10.0),

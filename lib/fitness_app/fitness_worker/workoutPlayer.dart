@@ -37,7 +37,7 @@ class WorkOutState extends State<WorkOut> {
                 LinearProgressIndicator(
                   value: _progressValue,
                   valueColor: AlwaysStoppedAnimation<Color>(
-                      FintnessAppTheme.nearlyDarkBlue),
+                      FitnessAppTheme.nearlyDarkBlue),
                   backgroundColor: Color.fromRGBO(80, 80, 80, 0.05),
                 ),
                 Row(
@@ -51,7 +51,7 @@ class WorkOutState extends State<WorkOut> {
                         },
                         child: Icon(
                           Icons.arrow_back,
-                          color: FintnessAppTheme.grey,
+                          color: FitnessAppTheme.grey,
                           size: 28,
                         ),
                       ),
@@ -91,7 +91,7 @@ class WorkOutState extends State<WorkOut> {
                       style: new TextStyle(
                         fontSize: 40.0,
                         fontFamily: "Roboto",
-                        color: FintnessAppTheme.nearlyDarkBlue,
+                        color: FitnessAppTheme.nearlyDarkBlue,
                       ),
                     ),
                   ],
@@ -107,7 +107,7 @@ class WorkOutState extends State<WorkOut> {
                       },
                       child: Icon(
                         Icons.keyboard_arrow_left,
-                        color: FintnessAppTheme.grey,
+                        color: FitnessAppTheme.grey,
                         size: 100,
                       ),
                     ),
@@ -124,7 +124,7 @@ class WorkOutState extends State<WorkOut> {
                                   strokeWidth: 7,
                                   value: 0.7,
                                   valueColor: AlwaysStoppedAnimation<Color>(
-                                      FintnessAppTheme.nearlyDarkBlue),
+                                      FitnessAppTheme.nearlyDarkBlue),
                                   backgroundColor: Colors.transparent,
                                 ),
                               ),
@@ -140,7 +140,7 @@ class WorkOutState extends State<WorkOut> {
                                   },
                                   child: Icon(
                                     Icons.pause,
-                                    color: FintnessAppTheme.grey,
+                                    color: FitnessAppTheme.grey,
                                     size: 100,
                                   ),
                                 ),
@@ -158,7 +158,7 @@ class WorkOutState extends State<WorkOut> {
                       },
                       child: Icon(
                         Icons.keyboard_arrow_right,
-                        color: FintnessAppTheme.grey,
+                        color: FitnessAppTheme.grey,
                         size: 100,
                       ),
                     ),

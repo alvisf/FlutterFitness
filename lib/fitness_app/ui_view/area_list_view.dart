@@ -64,7 +64,7 @@ class _AreaListViewState extends State<AreaListView>
                       );
                       animationController.forward();
                       return AreaView(
-                        imagepath: ListData.packListData[index],
+                        imagePath: ListData.packListData[index],
                         index: index,
                         animation: animation,
                         animationController: animationController,
@@ -90,13 +90,13 @@ class _AreaListViewState extends State<AreaListView>
 class AreaView extends StatelessWidget {
   const AreaView({
     Key key,
-    this.imagepath,
+    this.imagePath,
     this.index,
     this.animationController,
     this.animation,
   }) : super(key: key);
   final int index;
-  final String imagepath;
+  final String imagePath;
   final AnimationController animationController;
   final Animation<dynamic> animation;
 
@@ -112,7 +112,7 @@ class AreaView extends StatelessWidget {
                 0.0, 50 * (1.0 - animation.value), 0.0),
             child: Container(
               decoration: BoxDecoration(
-                color: FintnessAppTheme.white,
+                color: FitnessAppTheme.white,
                 borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(8.0),
                     bottomLeft: Radius.circular(8.0),
@@ -120,7 +120,7 @@ class AreaView extends StatelessWidget {
                     topRight: Radius.circular(8.0)),
                 boxShadow: <BoxShadow>[
                   BoxShadow(
-                      color: FintnessAppTheme.grey.withOpacity(0.4),
+                      color: FitnessAppTheme.grey.withOpacity(0.4),
                       offset: const Offset(1.1, 1.1),
                       blurRadius: 10.0),
                 ],
@@ -132,7 +132,7 @@ class AreaView extends StatelessWidget {
                   highlightColor: Colors.transparent,
                   hoverColor: Colors.transparent,
                   borderRadius: const BorderRadius.all(Radius.circular(8.0)),
-                  splashColor: FintnessAppTheme.nearlyDarkBlue.withOpacity(0.2),
+                  splashColor: FitnessAppTheme.nearlyDarkBlue.withOpacity(0.2),
                   onTap: () {
                     Navigator.pushNamed(context, ListData.infoListData[index]);
                   },
@@ -141,7 +141,7 @@ class AreaView extends StatelessWidget {
                       ClipRRect(
                         borderRadius: new BorderRadius.circular(8.0),
                         child: Image.asset(
-                          imagepath,
+                          imagePath,
                         ),
                       ),
                     ],

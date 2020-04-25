@@ -10,8 +10,8 @@ class LineChartSample2 extends StatefulWidget {
 
 class _LineChartSample2State extends State<LineChartSample2> {
   List<Color> gradientColors = [
-    FintnessAppTheme.nearlyDarkBlue,
-    FintnessAppTheme.gradientColour,
+    FitnessAppTheme.nearlyDarkBlue,
+    FitnessAppTheme.gradientColour,
   ];
 
   bool showAvg = false;
