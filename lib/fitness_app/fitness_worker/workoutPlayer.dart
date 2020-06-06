@@ -103,12 +103,12 @@ class WorkOutState extends State<WorkOut> {
                       splashColor: Colors.transparent,
                       highlightColor: Colors.transparent,
                       onPressed: () {
-                        Navigator.pop(context);
+                        // Navigator.pop(context);
                       },
                       child: Icon(
                         Icons.keyboard_arrow_left,
                         color: FitnessAppTheme.grey,
-                        size: 100,
+                        size: MediaQuery.of(context).size.width/5,
                       ),
                     ),
                     Container(
@@ -136,12 +136,13 @@ class WorkOutState extends State<WorkOut> {
                                   splashColor: Colors.transparent,
                                   highlightColor: Colors.transparent,
                                   onPressed: () {
-                                    Navigator.pop(context);
+                                    // Navigator.pop(context);
+
                                   },
                                   child: Icon(
-                                    Icons.pause,
+                                    Icons.play_arrow,
                                     color: FitnessAppTheme.grey,
-                                    size: 100,
+                                    size: MediaQuery.of(context).size.width/4,
                                   ),
                                 ),
                               ),
@@ -154,12 +155,12 @@ class WorkOutState extends State<WorkOut> {
                       splashColor: Colors.transparent,
                       highlightColor: Colors.transparent,
                       onPressed: () {
-                        Navigator.pop(context);
+                        // Navigator.pop(context);
                       },
                       child: Icon(
                         Icons.keyboard_arrow_right,
                         color: FitnessAppTheme.grey,
-                        size: 100,
+                        size: MediaQuery.of(context).size.width/5,
                       ),
                     ),
                   ],
@@ -200,3 +201,4 @@ class WorkOutState extends State<WorkOut> {
     });
   }
 }
+

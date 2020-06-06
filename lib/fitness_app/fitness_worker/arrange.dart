@@ -92,29 +92,37 @@ class ArrangePlaylist extends StatelessWidget {
             )
           ],
         ),
-        bottomNavigationBar: Container(
-          child: Column(
-            children: <Widget>[
-              Expanded(
-                child: Text(
-                  "GO!!!",
-                  style: new TextStyle(
-                    fontSize: 35.0,
-                    fontFamily: "Roboto",
-                    color: Colors.white,
-                  ),
-                ),
-              )
-            ],
-          ),
-          height: 55,
-          decoration: new BoxDecoration(
-            color: FitnessAppTheme.nearlyDarkBlue,
-            borderRadius: new BorderRadius.only(
-              topLeft: const Radius.circular(10.0),
-              topRight: const Radius.circular(10.0),
+        bottomNavigationBar: FlatButton(
+          onPressed:(){
+            Navigator.pushNamed(context, "/workout");
+            } ,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+            child: Column(
+              children: <Widget>[
+                Expanded(
+                    child: Text(
+                      "GO!!!",
+                      style: new TextStyle(
+                        fontSize: 35.0,
+                        fontFamily: "Roboto",
+                        color: Colors.white,
+                      ),
+                    ),
+                )
+              ],
+            ),
+            height: 55,
+            decoration: new BoxDecoration(
+              color: FitnessAppTheme.nearlyDarkBlue,
+              borderRadius: new BorderRadius.all(
+                Radius.circular(10.0),
+              ),
             ),
           ),
+                  ),
         ),
       ),
     );
@@ -189,7 +197,7 @@ class _ListViewCard extends State<ListViewCard> {
       color: Colors.white,
       child: InkWell(
         onTap: () {
-          Navigator.pushNamed(context, "/workout");
+          // Navigator.pushNamed(context, "/workout");
         },
         splashColor: Colors.blue,
         child: Row(
@@ -246,3 +254,4 @@ class _ListViewCard extends State<ListViewCard> {
     );
   }
 }
+
